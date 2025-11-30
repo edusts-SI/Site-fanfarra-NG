@@ -19,13 +19,13 @@ export const externalLinks = {
 // ==========================================
 export const siteImages = {
   // Renomeie seu arquivo de logo na pasta public para: logo.png (ou ajuste a extensão aqui se for .jpg)
-  logo: '/logo.png',
+  logo: 'logo.png',
 
   // Renomeie a imagem grande do topo para: hero.jpg
-  heroBackground: '/hero.jpg',
+  heroBackground: 'hero.jpg',
   
   // Renomeie a imagem lateral do sobre para: sobre.jpg
-  aboutSection: '/sobre.jpg',
+  aboutSection: 'sobre.jpg',
 };
 
 // ==========================================
@@ -51,7 +51,7 @@ export const timelineEvents: TimelineEvent[] = [
     location: 'Carira (SE)',
     description: '07 de Setembro: Nossa primeira apresentação em casa. O que era apenas uma ideia se tornou som, capturando o nascimento de um propósito no coração de Carira.',
     // Renomeie o arquivo na pasta public para: 2022-inicio.jpg
-    image: '/2022-inicio.jpg'
+    image: '2022-inicio.jpg'
   },
   {
     year: '2022',
@@ -59,7 +59,7 @@ export const timelineEvents: TimelineEvent[] = [
     location: 'Coronel João Sá (BA)',
     description: 'Nossa música cruzou a primeira fronteira. O nervosismo da estreia deu lugar ao orgulho de levar nossa arte para um novo público fora do estado.',
     // Renomeie o arquivo na pasta public para: 2022-coronel.jpg
-    image: '/2022-coronel.jpg'
+    image: '2022-coronel.jpg'
   },
   {
     year: '2023',
@@ -67,7 +67,7 @@ export const timelineEvents: TimelineEvent[] = [
     location: 'Nossa Senhora de Fátima (BA)',
     description: 'Mais fortes e experientes. A alegria de retornar à Bahia e mostrar nossa evolução técnica e visual.',
     // Renomeie o arquivo na pasta public para: 2023-fatima.jpg
-    image: '/2023-fatima.jpg'
+    image: '2023-fatima.jpg'
   },
   {
     year: '2023',
@@ -75,7 +75,7 @@ export const timelineEvents: TimelineEvent[] = [
     location: 'Povoado Marita (BA)',
     description: 'Nosso som ecoou pela primeira vez em Marita. A cada aplauso, a certeza de que nosso projeto estava no caminho certo.',
     // Renomeie o arquivo na pasta public para: 2023-marita.jpg
-    image: '/2023-marita.jpg'
+    image: '2023-marita.jpg'
   },
   {
     year: '2024',
@@ -83,7 +83,7 @@ export const timelineEvents: TimelineEvent[] = [
     location: 'Aracaju (SE)',
     description: 'Levando o nome de Carira para a capital! Nossa apresentação na Abertura dos Jogos Escolares em Aracaju marcou nossa história.',
     // Renomeie o arquivo na pasta public para: 2024-aracaju.jpg
-    image: '/2024-aracaju.jpg'
+    image: '2024-aracaju.jpg'
   },
   {
     year: '2024',
@@ -91,6 +91,6 @@ export const timelineEvents: TimelineEvent[] = [
     location: 'Carira (SE)',
     description: 'Apresentação na cerimônia de inauguração da nova prefeitura de Carira, unindo arte, civismo e educação.',
     // Renomeie o arquivo na pasta public para: 2024-prefeitura.jpg
-    image: '/2024-prefeitura.jpg'
+    image: '2024-prefeitura.jpg'
   },
 ];
