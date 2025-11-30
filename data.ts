@@ -29,13 +29,13 @@ export const externalLinks = {
 // ==========================================
 export const siteImages = {
   // Logo / Escudo (Canto superior esquerdo)
-  logo: 'https://ibb.co/p65dGBmp', // Link direto temporário ou base64 seria ideal, mas URL funciona para preview
+  logo: 'public/escudo_refeito-removebg-preview.png', // Link direto temporário ou base64 seria ideal, mas URL funciona para preview
 
   // Imagem grande do topo (Hero)
-  heroBackground: 'https://drive.google.com/uc?export=view&id=1DoQu46gwfjNR0dyWBXEK7hzD3OAbxUKD',
+  heroBackground: 'public/carira 2025 (2).jpg',
   
   // Imagem lateral da seção "Sobre Nós"
-  aboutSection: 'https://drive.google.com/uc?export=view&id=1EnPUbAORkr6IMM1C8mht5RnOa5OMnWva',
+  aboutSection: 'public/marita 2025.jpg',
 };
 
 // ==========================================
@@ -60,41 +60,41 @@ export const timelineEvents: TimelineEvent[] = [
     title: 'O Início de um Sonho',
     location: 'Carira (SE)',
     description: '07 de Setembro: Nossa primeira apresentação em casa. O que era apenas uma ideia se tornou som, capturando o nascimento de um propósito no coração de Carira.',
-    image: 'https://drive.google.com/uc?export=view&id=1s00RnjDxaZCHOywk8VxeqXn7ktkbRvQ7'
+    image: 'public/inicio.jpg'
   },
   {
     year: '2022',
     title: 'Primeira Fronteira Cruzada',
     location: 'Coronel João Sá (BA)',
     description: 'Nossa música cruzou a primeira fronteira. O nervosismo da estreia deu lugar ao orgulho de levar nossa arte para um novo público fora do estado.',
-    image: 'https://drive.google.com/uc?export=view&id=1EnPUbAORkr6IMM1C8mht5RnOa5OMnWva'
+    image: 'public/cjs 2022.jpg'
   },
   {
     year: '2023',
     title: 'Evolução Constante',
     location: 'Nossa Senhora de Fátima (BA)',
     description: 'Mais fortes e experientes. A alegria de retornar à Bahia e mostrar nossa evolução técnica e visual.',
-    image: 'https://drive.google.com/uc?export=view&id=1EnPUbAORkr6IMM1C8mht5RnOa5OMnWva'
+    image: 'public/fatima 2023 01.jpg'
   },
   {
     year: '2023',
     title: 'Novos Horizontes',
     location: 'Povoado Marita (BA)',
     description: 'Nosso som ecoou pela primeira vez em Marita. A cada aplauso, a certeza de que nosso projeto estava no caminho certo.',
-    image: 'https://drive.google.com/uc?export=view&id=1ddvydl7tWVZRdxWrXusYbhu_hrep5s3S'
+    image: 'public/marita 2023.png'
   },
   {
     year: '2024',
     title: 'Abertura dos Jogos',
     location: 'Aracaju (SE)',
     description: 'Levando o nome de Carira para a capital! Nossa apresentação na Abertura dos Jogos Escolares em Aracaju marcou nossa história.',
-    image: 'https://drive.google.com/uc?export=view&id=1QSoejCFuGDPm_oNpwhxwxGqAzmpbSO9B'
+    image: 'public/jogos escolares aju.jpg'
   },
   {
     year: '2024',
     title: 'Momento Histórico',
     location: 'Carira (SE)',
     description: 'Apresentação na cerimônia de inauguração da nova prefeitura de Carira, unindo arte, civismo e educação.',
-    image: 'https://drive.google.com/uc?export=view&id=1PW0nemLESZKKyeslJf2qoXUu3onBkaCG'
+    image: 'public/inaguraçao da prefeitura .jpg'
   },
 ];
