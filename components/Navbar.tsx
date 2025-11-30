@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X } from 'lucide-react';
-import { siteImages } from '../data';
+import { Menu, X, Music2 } from 'lucide-react';
 
 export const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -32,19 +31,15 @@ export const Navbar: React.FC = () => {
   ];
 
   return (
-    <nav className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-fng-navy shadow-lg py-2' : 'bg-gradient-to-b from-fng-navy/90 to-transparent py-4'}`}>
+    <nav className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-fng-navy shadow-lg py-2' : 'bg-transparent py-4'}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-          {/* Logo */}
+          {/* Logo - Agora Vetorial */}
           <div className="flex-shrink-0 flex items-center gap-3">
-            <div className="h-12 w-12 md:h-14 md:w-14 relative filter drop-shadow-md">
-               <img 
-                 src={siteImages.logo} 
-                 alt="Escudo Nova Geração" 
-                 className="w-full h-full object-contain"
-               />
+            <div className={`h-10 w-10 flex items-center justify-center rounded-lg ${isScrolled ? 'bg-fng-accent text-fng-navy' : 'bg-white/10 text-white backdrop-blur-sm'}`}>
+               <Music2 className="w-6 h-6" strokeWidth={2.5} />
             </div>
-            <span className={`font-display font-bold text-lg md:text-xl tracking-wider ${isScrolled || window.innerWidth < 768 ? 'text-white' : 'text-white'} drop-shadow-sm`}>
+            <span className={`font-display font-bold text-lg md:text-xl tracking-wider text-white drop-shadow-sm`}>
               FANFARRA <span className="text-fng-accent">NG</span>
             </span>
           </div>

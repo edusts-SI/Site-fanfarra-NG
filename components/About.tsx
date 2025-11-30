@@ -1,6 +1,5 @@
 import React from 'react';
-import { Music, Heart, Users, Star } from 'lucide-react';
-import { siteImages } from '../data';
+import { Music, Heart, Users, Speaker, Sparkles } from 'lucide-react';
 
 export const About: React.FC = () => {
   return (
@@ -20,7 +19,7 @@ export const About: React.FC = () => {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           {/* Content Column */}
           <div className="space-y-8">
-            <div className="bg-gray-50 p-6 rounded-xl border-l-4 border-fng-accent shadow-sm">
+            <div className="bg-gray-50 p-6 rounded-xl border-l-4 border-fng-accent shadow-sm hover:shadow-md transition-shadow">
               <h3 className="flex items-center text-xl font-bold text-fng-navy mb-3">
                 <Music className="w-6 h-6 text-fng-accent mr-3" />
                 Histórico
@@ -30,7 +29,7 @@ export const About: React.FC = () => {
               </p>
             </div>
 
-            <div className="bg-gray-50 p-6 rounded-xl border-l-4 border-fng-blue shadow-sm">
+            <div className="bg-gray-50 p-6 rounded-xl border-l-4 border-fng-blue shadow-sm hover:shadow-md transition-shadow">
               <h3 className="flex items-center text-xl font-bold text-fng-navy mb-3">
                 <Heart className="w-6 h-6 text-fng-blue mr-3" />
                 Impacto Social
@@ -41,33 +40,47 @@ export const About: React.FC = () => {
             </div>
             
              <div className="flex items-center justify-start pt-4">
-               <div className="flex items-center bg-fng-navy text-white px-6 py-3 rounded-lg shadow-lg">
-                 <Users className="w-8 h-8 text-fng-accent mr-4" />
+               <div className="flex items-center bg-fng-navy text-white px-8 py-4 rounded-xl shadow-lg border border-white/10">
+                 <Users className="w-10 h-10 text-fng-accent mr-4" />
                  <div>
-                   <span className="block text-2xl font-bold font-display">90+</span>
-                   <span className="text-sm text-gray-300">Integrantes Ativos</span>
+                   <span className="block text-3xl font-bold font-display">90+</span>
+                   <span className="text-sm text-blue-200">Integrantes Ativos</span>
                  </div>
                </div>
              </div>
           </div>
 
-          {/* Image Column */}
-          <div className="relative">
-            <div className="absolute top-4 left-4 w-full h-full bg-fng-accent/20 rounded-2xl z-0 transform translate-x-2 translate-y-2"></div>
-            <img 
-              src={siteImages.aboutSection}
-              alt="Maestra e integrantes da Fanfarra" 
-              className="relative z-10 w-full h-auto rounded-2xl shadow-xl object-cover aspect-[3/4]"
-            />
-            <div className="absolute -bottom-6 -right-6 bg-white p-4 rounded-lg shadow-lg z-20 max-w-xs hidden md:block border border-gray-100">
-               <div className="flex items-center gap-2 mb-2">
-                 <Star className="w-5 h-5 text-fng-accent fill-current" />
-                 <span className="font-bold text-fng-navy">Desde 2022</span>
-               </div>
-               <p className="text-sm text-gray-500 italic">
-                 "A arte é uma poderosa ferramenta de transformação."
-               </p>
+          {/* Visual Column (Substituindo Foto por Design Gráfico) */}
+          <div className="relative h-full min-h-[400px] bg-fng-blue/5 rounded-3xl overflow-hidden border border-fng-blue/10 flex items-center justify-center p-8">
+            
+            {/* Background Decorativo */}
+            <div className="absolute inset-0">
+               <div className="absolute top-0 right-0 w-64 h-64 bg-fng-accent/10 rounded-full blur-3xl transform translate-x-1/2 -translate-y-1/2"></div>
+               <div className="absolute bottom-0 left-0 w-64 h-64 bg-fng-blue/10 rounded-full blur-3xl transform -translate-x-1/2 translate-y-1/2"></div>
             </div>
+
+            {/* Composição Central de Ícones */}
+            <div className="relative z-10 text-center">
+              <div className="relative inline-block">
+                <div className="absolute inset-0 bg-fng-accent/20 rounded-full blur-xl"></div>
+                <Speaker className="w-32 h-32 text-fng-navy relative z-10" strokeWidth={1} />
+                <Sparkles className="absolute -top-4 -right-4 w-12 h-12 text-fng-accent animate-pulse" />
+                <Music className="absolute -bottom-2 -left-6 w-10 h-10 text-fng-blue" />
+              </div>
+              
+              <div className="mt-8 space-y-2">
+                 <h4 className="text-2xl font-display font-bold text-fng-navy">Música em Movimento</h4>
+                 <p className="text-gray-500 font-medium italic">"A arte é uma poderosa ferramenta de transformação."</p>
+              </div>
+
+              {/* Decorative Lines */}
+              <div className="mt-8 flex justify-center gap-2">
+                 <div className="w-2 h-2 rounded-full bg-fng-accent"></div>
+                 <div className="w-2 h-2 rounded-full bg-fng-blue"></div>
+                 <div className="w-2 h-2 rounded-full bg-fng-navy"></div>
+              </div>
+            </div>
+
           </div>
         </div>
       </div>

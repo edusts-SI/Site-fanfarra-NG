@@ -1,6 +1,5 @@
 import React from 'react';
-import { ArrowRight } from 'lucide-react';
-import { siteImages } from '../data';
+import { ArrowRight, Music4 } from 'lucide-react';
 
 export const Hero: React.FC = () => {
   const handleScroll = (e: React.MouseEvent<HTMLAnchorElement>, targetId: string) => {
@@ -12,30 +11,37 @@ export const Hero: React.FC = () => {
   };
 
   return (
-    <section id="inicio" className="relative h-screen min-h-[600px] flex items-center justify-center overflow-hidden scroll-mt-20">
-      {/* Background Image with Overlay */}
-      <div className="absolute inset-0 z-0">
-        <img 
-          src={siteImages.heroBackground} 
-          alt="Fanfarra Nova Geração em apresentação" 
-          className="w-full h-full object-cover"
-        />
-        <div className="absolute inset-0 bg-gradient-to-b from-fng-navy/80 via-fng-navy/70 to-fng-navy/90"></div>
+    <section id="inicio" className="relative h-screen min-h-[600px] flex items-center justify-center overflow-hidden scroll-mt-20 bg-fng-navy">
+      
+      {/* Background Gradient & Abstract Shapes */}
+      <div className="absolute inset-0 z-0 bg-gradient-to-br from-fng-navy via-blue-900 to-slate-900">
+        <div className="absolute top-[-20%] right-[-10%] w-[600px] h-[600px] bg-fng-blue/20 rounded-full blur-[100px]"></div>
+        <div className="absolute bottom-[-10%] left-[-10%] w-[500px] h-[500px] bg-fng-accent/10 rounded-full blur-[120px]"></div>
+        
+        {/* Decorative Grid */}
+        <div className="absolute inset-0 opacity-[0.05]" 
+             style={{ backgroundImage: 'linear-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, 0.1) 1px, transparent 1px)', backgroundSize: '40px 40px' }}>
+        </div>
+      </div>
+
+      {/* Decorative Large Icon (Watermark) */}
+      <div className="absolute right-10 bottom-20 opacity-[0.03] transform rotate-12 pointer-events-none hidden lg:block">
+        <Music4 className="w-96 h-96 text-white" />
       </div>
 
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
         <div className="animate-fade-in-up">
-          <span className="inline-block py-1 px-3 rounded-full bg-fng-accent/20 border border-fng-accent text-fng-accent text-sm font-bold tracking-widest mb-6 uppercase">
+          <span className="inline-block py-1 px-4 rounded-full bg-white/5 border border-white/10 text-fng-accent text-sm font-bold tracking-widest mb-6 uppercase backdrop-blur-md">
             Carira - Sergipe
           </span>
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-display font-extrabold leading-tight mb-6">
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-display font-extrabold leading-tight mb-6 tracking-tight">
             O Ritmo que Transforma a <br className="hidden md:block"/>
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-fng-accent to-sky-200">
               Capital Sergipana do Milho
             </span>
           </h1>
-          <p className="text-lg md:text-xl text-gray-300 mb-10 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-lg md:text-xl text-blue-100 mb-10 max-w-3xl mx-auto leading-relaxed">
             Disciplina, Arte e Liderança, forjando a Nova Geração. 
             Junte-se a nós e faça parte desta história de impacto social e cultural.
           </p>
@@ -52,7 +58,7 @@ export const Hero: React.FC = () => {
             <a 
               href="#sobre" 
               onClick={(e) => handleScroll(e, 'sobre')}
-              className="w-full sm:w-auto px-8 py-4 bg-transparent border-2 border-white text-white font-bold rounded-lg hover:bg-white/10 transition-colors cursor-pointer"
+              className="w-full sm:w-auto px-8 py-4 bg-white/5 border border-white/20 hover:bg-white/10 backdrop-blur-sm text-white font-bold rounded-lg transition-colors cursor-pointer"
             >
               CONHECER HISTÓRIA
             </a>

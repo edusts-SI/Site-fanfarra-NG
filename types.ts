@@ -2,8 +2,8 @@ export interface TimelineEvent {
   year: string;
   title: string;
   description: string;
-  image?: string;
   location?: string;
+  icon?: 'map' | 'music' | 'trophy' | 'star'; // Tipo de ícone para variar o visual
 }
 
 export interface TeamMember {
