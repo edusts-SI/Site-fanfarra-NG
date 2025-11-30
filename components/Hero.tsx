@@ -1,5 +1,6 @@
 import React from 'react';
 import { ArrowRight, Music4 } from 'lucide-react';
+import { externalLinks } from '../data';
 
 export const Hero: React.FC = () => {
   const handleScroll = (e: React.MouseEvent<HTMLAnchorElement>, targetId: string) => {
@@ -56,8 +57,9 @@ export const Hero: React.FC = () => {
               <ArrowRight className="w-5 h-5" />
             </a>
             <a 
-              href="#sobre" 
-              onClick={(e) => handleScroll(e, 'sobre')}
+              href={externalLinks.historia}
+              target="_blank"
+              rel="noopener noreferrer"
               className="w-full sm:w-auto px-8 py-4 bg-white/5 border border-white/20 hover:bg-white/10 backdrop-blur-sm text-white font-bold rounded-lg transition-colors cursor-pointer"
             >
               CONHECER HISTÓRIA

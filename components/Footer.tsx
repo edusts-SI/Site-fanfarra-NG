@@ -1,5 +1,6 @@
 import React from 'react';
 import { Instagram, MapPin, Mail } from 'lucide-react';
+import { externalLinks } from '../data';
 
 export const Footer: React.FC = () => {
   const handleScroll = (e: React.MouseEvent<HTMLAnchorElement>, targetId: string) => {
@@ -25,8 +26,37 @@ export const Footer: React.FC = () => {
               Um projeto de amor, música e disciplina fundado em 2022.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-gray-400 hover:text-fng-accent transition-colors">
+              <a 
+                href={externalLinks.instagram} 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-400 hover:text-fng-accent transition-colors"
+                title="Siga-nos no Instagram"
+              >
                 <Instagram className="w-6 h-6" />
+              </a>
+              <a 
+                href={externalLinks.tiktok} 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-400 hover:text-fng-accent transition-colors"
+                title="Siga-nos no TikTok"
+              >
+                {/* Custom SVG for TikTok since standard Lucide version varies */}
+                <svg 
+                  xmlns="http://www.w3.org/2000/svg" 
+                  width="24" 
+                  height="24" 
+                  viewBox="0 0 24 24" 
+                  fill="none" 
+                  stroke="currentColor" 
+                  strokeWidth="2" 
+                  strokeLinecap="round" 
+                  strokeLinejoin="round" 
+                  className="w-6 h-6"
+                >
+                  <path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5" />
+                </svg>
               </a>
             </div>
           </div>

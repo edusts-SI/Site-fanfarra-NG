@@ -6,6 +6,9 @@ import { TeamMember, TimelineEvent } from './types';
 export const externalLinks = {
   inscricao: 'https://docs.google.com/forms/d/e/1FAIpQLSfcZjF_CnmIFJZResokql6xRvvmvEMXX4wJ6oYHCcnPUFHBEA/viewform?usp=dialog', 
   doacao: 'https://wa.me/5579000000000?text=Ola,%20gostaria%20de%20fazer%20uma%20doacao%20para%20a%20Fanfarra!',
+  instagram: 'https://www.instagram.com/fanfarra_ng_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==', 
+  tiktok: 'https://www.tiktok.com/@_fanfarra_ng?_t=ZM-8wMYlmV22kv&_r=1&utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGn5NzwwhXCzF1yccxfWvJq7WGzdbm575I1CnPdIWvoBqpOi6wIv3IhIMXdh4Y_aem_jlzWCUvXsgmmB9pABr9LPw',
+  historia: 'https://fanfarranova-geracao-iqoty9m.gamma.site', // <--- LINK DO BOTÃO CONHECER HISTÓRIA
 };
 
 // ==========================================
