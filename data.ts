@@ -19,7 +19,7 @@ export const externalLinks = {
 // ==========================================
 export const siteImages = {
   // Renomeie seu arquivo de logo na pasta public para: logo.png (ou ajuste a extensão aqui se for .jpg)
-  logo: 'logo.png',
+  logo: 'https://drive.google.com/file/d/1O14TbO1acvFTbqKe85RoOfsbi9TFY7ew/view?usp=sharing',
 
   // Renomeie a imagem grande do topo para: hero.jpg
   heroBackground: 'hero.jpg',
