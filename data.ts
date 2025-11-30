@@ -1,41 +1,31 @@
 import { TeamMember, TimelineEvent } from './types';
 
 // ==========================================
-// DICA PARA DESENVOLVEDORES (PRODUÇÃO):
+// CONFIGURAÇÃO DE IMAGENS LOCAIS (PASTA PUBLIC)
 // ==========================================
-// Atualmente estamos usando links externos (URLs) porque este ambiente 
-// não permite upload de arquivos de imagem físicos pela IA.
-//
-// QUANDO VOCÊ BAIXAR O PROJETO:
-// 1. Crie uma pasta chamada 'images' dentro da pasta 'public'.
-// 2. Baixe as fotos e salve lá.
-// 3. Troque os links abaixo pelo caminho local. 
-//    Exemplo: troque 'https://drive...' por '/images/foto-hero.jpg'
-// ==========================================
+// Como seus arquivos estão na pasta 'public', referenciamos eles com uma barra '/' no início.
+// Certifique-se de que os nomes dos arquivos na pasta public correspondam EXATAMENTE aos nomes abaixo.
 
-// ==========================================
-// ÁREA DE LINKS EXTERNOS - COLOQUE SEUS LINKS AQUI
-// ==========================================
 export const externalLinks = {
   // Link para o Formulário de Inscrição (Google Forms)
-  inscricao: 'https://forms.google.com/your-form-link-here',
+  inscricao: 'https://docs.google.com/forms/d/e/YOUR_FORM_ID/viewform', // Substitua pelo seu link real
   
-  // Link para Doação (Pode ser um link de Pagamento, Whatsapp ou instrução)
-  doacao: 'https://wa.me/5579000000000?text=Gostaria%20de%20fazer%20uma%20doacao',
+  // Link para Doação 
+  doacao: 'https://wa.me/5579000000000?text=Ola,%20gostaria%20de%20fazer%20uma%20doacao%20para%20a%20Fanfarra!',
 };
 
 // ==========================================
 // ÁREA DE IMAGENS
 // ==========================================
 export const siteImages = {
-  // Logo / Escudo (Canto superior esquerdo)
-  logo: 'public/escudo_refeito-removebg-preview.png', // Link direto temporário ou base64 seria ideal, mas URL funciona para preview
+  // Renomeie seu arquivo de logo na pasta public para: logo.png (ou ajuste a extensão aqui se for .jpg)
+  logo: '/logo.png',
 
-  // Imagem grande do topo (Hero)
-  heroBackground: 'public/carira 2025 (2).jpg',
+  // Renomeie a imagem grande do topo para: hero.jpg
+  heroBackground: '/hero.jpg',
   
-  // Imagem lateral da seção "Sobre Nós"
-  aboutSection: 'public/marita 2025.jpg',
+  // Renomeie a imagem lateral do sobre para: sobre.jpg
+  aboutSection: '/sobre.jpg',
 };
 
 // ==========================================
@@ -60,41 +50,47 @@ export const timelineEvents: TimelineEvent[] = [
     title: 'O Início de um Sonho',
     location: 'Carira (SE)',
     description: '07 de Setembro: Nossa primeira apresentação em casa. O que era apenas uma ideia se tornou som, capturando o nascimento de um propósito no coração de Carira.',
-    image: 'public/inicio.jpg'
+    // Renomeie o arquivo na pasta public para: 2022-inicio.jpg
+    image: '/2022-inicio.jpg'
   },
   {
     year: '2022',
     title: 'Primeira Fronteira Cruzada',
     location: 'Coronel João Sá (BA)',
     description: 'Nossa música cruzou a primeira fronteira. O nervosismo da estreia deu lugar ao orgulho de levar nossa arte para um novo público fora do estado.',
-    image: 'public/cjs 2022.jpg'
+    // Renomeie o arquivo na pasta public para: 2022-coronel.jpg
+    image: '/2022-coronel.jpg'
   },
   {
     year: '2023',
     title: 'Evolução Constante',
     location: 'Nossa Senhora de Fátima (BA)',
     description: 'Mais fortes e experientes. A alegria de retornar à Bahia e mostrar nossa evolução técnica e visual.',
-    image: 'public/fatima 2023 01.jpg'
+    // Renomeie o arquivo na pasta public para: 2023-fatima.jpg
+    image: '/2023-fatima.jpg'
   },
   {
     year: '2023',
     title: 'Novos Horizontes',
     location: 'Povoado Marita (BA)',
     description: 'Nosso som ecoou pela primeira vez em Marita. A cada aplauso, a certeza de que nosso projeto estava no caminho certo.',
-    image: 'public/marita 2023.png'
+    // Renomeie o arquivo na pasta public para: 2023-marita.jpg
+    image: '/2023-marita.jpg'
   },
   {
     year: '2024',
     title: 'Abertura dos Jogos',
     location: 'Aracaju (SE)',
     description: 'Levando o nome de Carira para a capital! Nossa apresentação na Abertura dos Jogos Escolares em Aracaju marcou nossa história.',
-    image: 'public/jogos escolares aju.jpg'
+    // Renomeie o arquivo na pasta public para: 2024-aracaju.jpg
+    image: '/2024-aracaju.jpg'
   },
   {
     year: '2024',
     title: 'Momento Histórico',
     location: 'Carira (SE)',
     description: 'Apresentação na cerimônia de inauguração da nova prefeitura de Carira, unindo arte, civismo e educação.',
-    image: 'public/inaguraçao da prefeitura .jpg'
+    // Renomeie o arquivo na pasta public para: 2024-prefeitura.jpg
+    image: '/2024-prefeitura.jpg'
   },
 ];
