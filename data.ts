@@ -8,7 +8,7 @@ import { TeamMember, TimelineEvent } from './types';
 
 export const externalLinks = {
   // Link para o Formulário de Inscrição (Google Forms)
-  inscricao: 'https://docs.google.com/forms/d/e/YOUR_FORM_ID/viewform', // Substitua pelo seu link real
+  inscricao: 'https://www.youtube.com/watch?v=yUSEqfamytw', // Substitua pelo seu link real
   
   // Link para Doação 
   doacao: 'https://wa.me/5579000000000?text=Ola,%20gostaria%20de%20fazer%20uma%20doacao%20para%20a%20Fanfarra!',
