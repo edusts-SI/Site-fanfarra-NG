@@ -20,7 +20,6 @@ export const teamMembers: TeamMember[] = [
   { role: 'Secretaria Administrativa Geral', name: 'Maria Eduarda' },
   { role: 'Coordenador', name: 'Eduardo Santos' },
   { role: 'Coordenador', name: 'Kauê Renan' },
-  { role: 'Auxiliar Coreógrafo', name: 'Valdrike Ferreira' },
   { role: 'Supervisora Geral', name: 'Laryssa Andrade' },
 ];
 
